@@ -1,0 +1,26 @@
+#:schema https://mise.jdx.dev/schema/mise.json
+
+[tasks.sync]
+description = "Upgrade tools and apply dotfiles"
+run = ["mise upgrade", "mise bootstrap packages upgrade", "mise dot apply"]
+dir = "~/Documents/dotfiles"
+
+[bootstrap.packages]
+"winget:Git.Git" = "latest"
+"winget:Microsoft.PowerShell" = "latest"
+"winget:AlDanial.Cloc" = "latest"
+
+[tools]
+node = "latest"
+bun = "latest"
+"npm:@antfu/ni" = "latest"
+"npm:@opencode/cli" = { version = "latest", allow_builds = ["@opencode/cli"] }
+"npm:@openai/codex" = "latest"
+
+[dotfiles]
+"~/.config/mise/config.toml" = "~/Documents/dotfiles/mise.toml"
+"~/.gitconfig" = { source = "dotfiles/git/.gitconfig", mode = "template" }
+"~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" = "dotfiles/powershell/profile.ps1"
+"~/AppData/Roaming/Zed" = "dotfiles/zed"
+"~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
+"~/.codex/config.toml" = { source = "dotfiles/codex/config.toml", mode = "template" }

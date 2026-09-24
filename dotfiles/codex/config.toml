@@ -1,0 +1,157 @@
+model = "gpt-5.6-luna"
+show_raw_agent_reasoning = true
+model_reasoning_summary = "detailed"
+model_reasoning_effort = "high"
+web_search = "cached"
+approvals_reviewer = "user"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+
+[features]
+remote_connections = true
+default_mode_request_user_input = true
+
+[notice]
+hide_full_access_warning = false
+
+[windows]
+sandbox = "elevated"
+
+[tui]
+status_line = [
+  "model-with-reasoning",
+  "context-remaining",
+  "git-branch",
+  "context-used",
+  "five-hour-limit",
+  "weekly-limit",
+]
+screen_reader_detection_done = true
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+"gpt-5.6-sol" = 1
+gpt-6-astra = 4
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."browser-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."agent-skills@robot-inventor"]
+enabled = true
+
+[marketplaces.openai-bundled]
+last_updated = "2026-08-16T06:33:47Z"
+source_type = "local"
+source = '\\?\{{ env.USERPROFILE }}\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-14T10:21:11Z"
+source_type = "local"
+source = '\\?\{{ env.USERPROFILE }}\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[marketplaces.robot-inventor]
+last_updated = "2026-09-24T07:49:55Z"
+last_revision = "06e4be285e4f594df6cc2d63cf9b06baacd291c7"
+source_type = "git"
+source = "https://github.com/Robot-Inventor/agent-skills.git"
+
+[desktop]
+appearanceDarkCodeThemeId = "tokyo-night"
+followUpQueueMode = "steer"
+composerEnterBehavior = "cmdIfMultiline"
+integratedTerminalShell = "powershell"
+runCodexInWindowsSubsystemForLinux = false
+notifications-turn-mode = "always"
+conversationDetailMode = "STEPS_COMMANDS"
+keepRemoteControlAwakeWhilePluggedIn = true
+ambient-suggestions-enabled = false
+usePointerCursors = true
+selected-avatar-id = "custom:pet_6a673a5c77908191b138721c57c1e393"
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#3d59a1"
+contrast = 50
+ink = "#a9b1d6"
+opaqueWindows = true
+surface = "#1a1b26"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+code = '"Geist Mono", ui-monospace, "SFMono-Regular"'
+ui = "Geist, Inter"
+
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#449dab"
+diffRemoved = "#914c54"
+skill = "#9d7cd8"
+
+[desktop.open-in-target-preferences]
+global = "zed"
+
+[mcp_servers.node_repl]
+args = []
+command = '{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = '{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_modules'
+NODE_REPL_NODE_PATH = '{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = '{{ env.USERPROFILE }}\.codex;{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_modules'
+CODEX_HOME = '{{ env.USERPROFILE }}\.codex'
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7e278296881e246288158627d6f66ac980dc372f751e1b3f2b6e14e9e7593966"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.810.41047"
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-de96ad0b-a329-4b1c-bff7-117393cfbba8'
+CODEX_CLI_PATH = '{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\bin\3cff67e9f778ef0e\codex.exe'
+
+[shell_environment_policy.set]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7e278296881e246288158627d6f66ac980dc372f751e1b3f2b6e14e9e7593966"
+NODE_REPL_TRUSTED_CODE_PATHS = '{{ env.USERPROFILE }}\.codex;{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_modules'
+
+[hooks.state."agent-skills@robot-inventor:hooks/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:c36e6178ccca13af48ad4fa138632d9ac90f0ece43eee6f85fe0bed0a6a8965c"
+
+[hooks.state."agent-skills@robot-inventor:hooks/hooks.json:subagent_start:0:0"]
+trusted_hash = "sha256:6498af4a8003e011c5b7802b36d7fdacafe4d0bfe7b80704e02e066bcc5b7bb0"
+
+[hooks.state."agent-skills@robot-inventor:hooks/hooks.json:user_prompt_submit:0:0"]
+trusted_hash = "sha256:4fb2cd5c3a0a8adf1411776b0008d86fddd9086e12d156e5cde7661e453bb10d"

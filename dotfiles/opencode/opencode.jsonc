@@ -1,0 +1,5 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "lsp": true,
+    "plugin": ["@robot-inventor/agent-skills@1.2.0"],
+}

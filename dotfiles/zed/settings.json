@@ -1,0 +1,241 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "format_on_save": "on",
+    "code_lens": "on",
+    "cli_default_open_behavior": "existing_window",
+    "outline_panel": {
+        "dock": "right"
+    },
+    "collaboration_panel": {
+        "button": false,
+        "dock": "right"
+    },
+    "language_models": {
+        "openai_compatible": {
+            "Z.ai": {
+                "api_url": "https://api.z.ai/api/coding/paas/v4",
+                "available_models": [
+                    {
+                        "name": "GLM-5.1",
+                        "max_tokens": 204800,
+                        "max_output_tokens": 131072,
+                        "max_completion_tokens": 131072,
+                        "capabilities": {
+                            "tools": true,
+                            "images": false,
+                            "parallel_tool_calls": false,
+                            "prompt_cache_key": false,
+                            "chat_completions": true
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "tabs": {
+        "file_icons": true,
+        "show_diagnostics": "all"
+    },
+    "title_bar": {
+        "show_branch_status_icon": true
+    },
+    "semantic_tokens": "combined",
+    "edit_predictions": {
+        "allow_data_collection": "no",
+        "provider": "copilot"
+    },
+    "resize_all_panels_in_dock": ["left", "right"],
+    "project_panel": {
+        "dock": "right",
+        "git_status_indicator": true,
+        "diagnostic_badges": true,
+        "hide_root": true,
+        "bold_folder_labels": true,
+        "default_width": 250
+    },
+    "git_panel": {
+        "folder_indicator": "icon",
+        "group_by": "staging",
+        "dock": "right",
+        "show_count_badge": true,
+        "file_icons": true,
+        "tree_view": true,
+        "default_width": 250
+    },
+    "terminal": {
+        "default_height": 300
+    },
+    "sticky_scroll": {
+        "enabled": true
+    },
+    "agent_servers": {
+        "OpenCode v2": {
+            "type": "custom",
+            "command": "opencode",
+            "args": ["acp"],
+            "env": {
+                "OPENCODE_ENABLE_PARALLEL": "1"
+            }
+        },
+        "codex-acp": {
+            "default_config_options": {
+                "fast-mode": false,
+                "model": "gpt-5.6-luna",
+                "reasoning_effort": "high",
+                "mode": "agent-full-access"
+            },
+            "type": "registry",
+            "default_mode": "default"
+        },
+        "opencode": {
+            "default_config_options": {
+                "mode": "build",
+                "effort": "max",
+                "model": "zai-coding-plan/glm-5.3-flash"
+            },
+            "type": "registry"
+        }
+    },
+    "colorize_brackets": true,
+    "inlay_hints": {
+        "enabled": true
+    },
+    "wsl_connections": [
+        {
+            "distro_name": "Ubuntu",
+            "user": null,
+            "projects": []
+        }
+    ],
+    "icon_theme": {
+        "mode": "dark",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme"
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "agent": {
+        "single_file_review": true,
+        "enable_feedback": false,
+        "default_model": {
+            "provider": "openai-subscribed",
+            "model": "gpt-5.6-luna",
+            "enable_thinking": true,
+            "effort": "low"
+        },
+        "use_modifier_to_send": true,
+        "dock": "left",
+        "show_turn_stats": true,
+        "notify_when_agent_waiting": "all_screens",
+        "play_sound_when_agent_done": "always",
+        "favorite_models": [],
+        "inline_assistant_model": {
+            "provider": "openai-subscribed",
+            "model": "gpt-5.6-luna",
+            "enable_thinking": false
+        },
+        "model_parameters": [],
+        "default_width": 250,
+        "threads_sidebar_default_width": 250,
+        "flexible": false,
+        "expand_terminal_card": false
+    },
+    "preview_tabs": {
+        "enabled": false
+    },
+    "minimap": {
+        "show": "auto"
+    },
+    "buffer_font_fallbacks": ["Noto Sans JP"],
+    "buffer_font_family": "Moralerspace Neon",
+    "file_types": {
+        "markdown": ["*.mdx"],
+        "Processing": ["*.pde"],
+        "shellsession": ["*.shellsession"]
+    },
+    "linked_edits": true,
+    "show_whitespaces": "boundary",
+    "show_edit_predictions": true,
+    "soft_wrap": "none",
+    "base_keymap": "VSCode",
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Moonlight"
+    },
+    "tab_size": 4,
+    "auto_install_extensions": {
+        "csharp": true,
+        "cspell": true,
+        "dockerfile": true,
+        "emmet": true,
+        "git-firefly": true,
+        "html": true,
+        "markdownlint": true,
+        "material-icon-theme": true,
+        "moonlight": true,
+        "oxc": true,
+        "processing": true,
+        "rainbow-csv": true,
+        "scss": true,
+        "tombi": true,
+        "toml": true,
+        "tsgo": true,
+        "xml": true
+    },
+    "languages": {
+        "Git Commit": {
+            "soft_wrap": "editor_width",
+            // Ref: https://github.com/zed-industries/zed/issues/50263
+            "preferred_line_length": 9999
+        },
+        "Markdown": {
+            "soft_wrap": "editor_width",
+            "format_on_save": "on",
+            "tab_size": 2
+        },
+        "TypeScript": {
+            "language_servers": ["!vtsls", "!typescript-language-server", "typescript-ls", "..."]
+        },
+        "TSX": {
+            "language_servers": ["!vtsls", "!typescript-language-server", "typescript-ls", "..."]
+        },
+        "JavaScript": {
+            "language_servers": ["!vtsls", "!typescript-language-server", "typescript-ls", "..."]
+        }
+    },
+    "global_lsp_settings": {
+        "semantic_token_rules": [
+            {
+                "token_type": "parameter",
+                "style": ["variable.parameter"]
+            },
+            {
+                "token_type": "property",
+                "token_modifiers": ["declaration"],
+                "style": ["property.declaration"]
+            },
+            {
+                "token_type": "type",
+                "token_modifiers": ["defaultLibrary"],
+                "style": ["type.defaultLibrary"]
+            },
+            {
+                "token_type": "type",
+                "token_modifiers": ["defaultLibrary"],
+                "style": ["type.builtin"]
+            }
+        ]
+    }
+}
