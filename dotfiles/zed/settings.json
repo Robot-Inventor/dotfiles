@@ -77,6 +77,10 @@
     },
     "agent_servers": {
         "OpenCode v2": {
+            "default_config_options": {
+                "effort": "high",
+                "model": "openai/gpt-6-luna"
+            },
             "type": "custom",
             "command": "opencode",
             "args": ["acp"],
