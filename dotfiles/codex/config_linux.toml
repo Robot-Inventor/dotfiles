@@ -1,0 +1,17 @@
+model = "gpt-5.6-luna"
+show_raw_agent_reasoning = true
+model_reasoning_summary = "detailed"
+model_reasoning_effort = "high"
+web_search = "cached"
+
+[tui.model_availability_nux]
+gpt-6-astra = 2
+
+[plugins."agent-skills@robot-inventor"]
+enabled = true
+
+[marketplaces.robot-inventor]
+last_updated = "2026-09-24T07:49:55Z"
+last_revision = "06e4be285e4f594df6cc2d63cf9b06baacd291c7"
+source_type = "git"
+source = "https://github.com/Robot-Inventor/agent-skills.git"

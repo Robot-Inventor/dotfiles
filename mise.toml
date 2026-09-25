@@ -31,7 +31,6 @@ bun = "latest"
 "~/.gitconfig" = { source = "dotfiles/git/.gitconfig", mode = "template" }
 "~/.config/git/attributes" = "dotfiles/git/.gitattributes"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
-"~/.codex/config.toml" = { source = "dotfiles/codex/config.toml", mode = "template" }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
 
 [dotfiles.powershell]
@@ -41,3 +40,11 @@ variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerSh
 [dotfiles.zed]
 source = "dotfiles/zed"
 variants = [{ os = "windows", target = "~/AppData/Roaming/Zed" }]
+
+[dotfiles.codex]
+source = "dotfiles/codex/config.toml"
+mode = "template"
+variants = [
+  { os = "windows", target = "~/.codex/config_windows.toml" },
+  { os = "linux", target = "~/.codex/config_linux.toml" },
+]
