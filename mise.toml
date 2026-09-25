@@ -8,10 +8,11 @@ run = [
   "skills update --global --yes",
   "mise dot apply",
 ]
-dir = "~/Documents/dotfiles"
+dir = "~/dotfiles"
 
 [bootstrap.packages]
 "winget:Git.Git" = "latest"
+"apt:git" = "latest"
 "winget:Microsoft.PowerShell" = "latest"
 "winget:AlDanial.Cloc" = "latest"
 
@@ -24,11 +25,17 @@ bun = "latest"
 "npm:skills" = "latest"
 
 [dotfiles]
-"~/.config/mise/config.toml" = "~/Documents/dotfiles/mise.toml"
+"~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
 "~/.gitconfig" = { source = "dotfiles/git/.gitconfig", mode = "template" }
 "~/.config/git/attributes" = "dotfiles/git/.gitattributes"
-"~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" = "dotfiles/powershell/profile.ps1"
-"~/AppData/Roaming/Zed" = "dotfiles/zed"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
 "~/.codex/config.toml" = { source = "dotfiles/codex/config.toml", mode = "template" }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
+
+[dotfiles.powershell]
+source = "dotfiles/powershell/profile.ps1"
+variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" }]
+
+[dotfiles.zed]
+source = "dotfiles/zed"
+variants = [{ os = "windows", target = "~/AppData/Roaming/Zed" }]

@@ -78,7 +78,7 @@
     "agent_servers": {
         "OpenCode v2": {
             "default_config_options": {
-                "effort": "high",
+                "effort": "max",
                 "model": "openai/gpt-6-luna"
             },
             "type": "custom",
