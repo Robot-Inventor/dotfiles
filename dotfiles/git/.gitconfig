@@ -5,7 +5,7 @@
 [user]
 	email = 50550561+Robot-Inventor@users.noreply.github.com
 	name = Robot-Inventor
-	signingkey = {{ env.USERPROFILE | replace(from="\\", to="/") }}/.ssh/id_ed25519_git_signing.pub
+	signingkey = {{ (env.USERPROFILE if os() == "windows" else env.HOME) | replace(from="\\", to="/") }}/.ssh/id_ed25519_git_signing.pub
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
