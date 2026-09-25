@@ -19,6 +19,8 @@ dir = "~/dotfiles"
 [tools]
 node = "latest"
 bun = "latest"
+# GitHub CLI
+"aqua:cli/cli" = "latest"
 "npm:@antfu/ni" = "latest"
 "npm:@opencode/cli" = { version = "latest", allow_builds = ["@opencode/cli"] }
 "npm:@openai/codex" = "latest"
