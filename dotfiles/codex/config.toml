@@ -14,6 +14,7 @@ default_mode_request_user_input = true
 [notice]
 hide_full_access_warning = false
 
+{% if os() == "windows" %}
 [windows]
 sandbox = "elevated"
 
@@ -32,6 +33,7 @@ screen_reader_detection_done = true
 "gpt-5.5" = 4
 "gpt-5.6-sol" = 1
 gpt-6-astra = 4
+{% endif %}
 
 [plugins."github@openai-curated"]
 enabled = true
@@ -72,6 +74,7 @@ enabled = true
 [plugins."agent-skills@robot-inventor"]
 enabled = true
 
+{% if os() == "windows" %}
 [marketplaces.openai-bundled]
 last_updated = "2026-08-16T06:33:47Z"
 source_type = "local"
@@ -81,6 +84,7 @@ source = '\\?\{{ env.USERPROFILE }}\.codex\.tmp\bundled-marketplaces\openai-bund
 last_updated = "2026-08-14T10:21:11Z"
 source_type = "local"
 source = '\\?\{{ env.USERPROFILE }}\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+{% endif %}
 
 [marketplaces.robot-inventor]
 last_updated = "2026-09-24T07:49:55Z"
@@ -88,6 +92,7 @@ last_revision = "06e4be285e4f594df6cc2d63cf9b06baacd291c7"
 source_type = "git"
 source = "https://github.com/Robot-Inventor/agent-skills.git"
 
+{% if os() == "windows" %}
 [desktop]
 appearanceDarkCodeThemeId = "tokyo-night"
 followUpQueueMode = "steer"
@@ -146,6 +151,7 @@ CODEX_CLI_PATH = '{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\bin\3cff67e9f
 BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
 NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "7e278296881e246288158627d6f66ac980dc372f751e1b3f2b6e14e9e7593966"
 NODE_REPL_TRUSTED_CODE_PATHS = '{{ env.USERPROFILE }}\.codex;{{ env.USERPROFILE }}\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_modules'
+{% endif %}
 
 [hooks.state."agent-skills@robot-inventor:hooks/hooks.json:session_start:0:0"]
 trusted_hash = "sha256:c36e6178ccca13af48ad4fa138632d9ac90f0ece43eee6f85fe0bed0a6a8965c"
