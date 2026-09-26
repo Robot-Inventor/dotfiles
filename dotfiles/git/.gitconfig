@@ -19,5 +19,7 @@
 	format = ssh
 [commit]
 	gpgsign = true
+# {% if os() == "windows" %}
 [gpg "ssh"]
 	program = C:/Windows/System32/OpenSSH/ssh-keygen.exe
+# {% endif %}
