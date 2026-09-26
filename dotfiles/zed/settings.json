@@ -241,5 +241,12 @@
                 "style": ["type.builtin"]
             }
         ]
+    },
+    "diagnostics": {
+        "lsp_pull_diagnostics": {
+            // Enable debouncing because Oxlint launches a new `tsgo` process with every diagnostic run, placing a strain on system resources.
+            // Ref: https://github.com/oxc-project/oxc/issues/26613
+            "debounce_ms": 1000
+        }
     }
 }
