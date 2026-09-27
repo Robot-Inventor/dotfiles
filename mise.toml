@@ -28,7 +28,7 @@ bun = "latest"
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
-"~/.gitconfig" = { source = "dotfiles/git/.gitconfig", mode = "template" }
+"~/.gitconfig" = { source = "dotfiles/git/.gitconfig", template = "tera" }
 "~/.config/git/attributes" = "dotfiles/git/.gitattributes"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
 "~/.codex/config.toml" = { source = "dotfiles/codex/config.toml", mode = "template" }
