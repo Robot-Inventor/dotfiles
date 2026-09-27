@@ -31,7 +31,7 @@ bun = "latest"
 "~/.gitconfig/settings" = { source = "dotfiles/git/.gitconfig", template = "tera" }
 "~/.config/git/attributes" = "dotfiles/git/.gitattributes"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
-"~/.codex/config.toml" = { source = "dotfiles/codex/config.toml", mode = "template" }
+"~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera" }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
 
 [dotfiles.powershell]
