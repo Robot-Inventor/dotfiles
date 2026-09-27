@@ -54,6 +54,10 @@ variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerSh
 source = "dotfiles/bash/.bashrc"
 variants = [{ os = "linux", target = "~/.bashrc" }]
 
+[dotfiles.blesh]
+source = "dotfiles/blesh/.blerc"
+variants = [{ os = "linux", target = "~/.blerc" }]
+
 [dotfiles.zed]
 source = "dotfiles/zed"
 variants = [{ os = "windows", target = "~/AppData/Roaming/Zed" }]

@@ -1,0 +1,5 @@
+bleopt highlight_syntax=
+bleopt highlight_filename=
+bleopt highlight_variable=
+
+ble-face auto_complete='fg=244'
