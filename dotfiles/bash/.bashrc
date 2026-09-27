@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+[[ $- == *i* ]] && source -- ~/.local/share/blesh/ble.sh --attach=none
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -130,4 +132,5 @@ if command -v ssh-agent >/dev/null 2>&1 && command -v ssh-add >/dev/null 2>&1; t
   fi
 fi
 
-eval "$(mise activate bash)"
+eval "$("$HOME/.local/bin/mise" activate bash)"
+[[ ${BLE_VERSION-} ]] && ble-attach

@@ -5,10 +5,21 @@ description = "Upgrade tools and apply dotfiles"
 run = [
   "mise upgrade",
   "mise bootstrap packages upgrade",
+  "mise run update-blesh",
   "skills update --global --yes",
   "mise dot apply",
 ]
 dir = "~/dotfiles"
+
+[tasks.update-blesh]
+description = "Install or update ble.sh"
+run = '''
+tmp="$(mktemp -d)"
+trap 'rm -rf "$tmp"' EXIT
+curl -fsSL https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz \
+  | tar -xJ -C "$tmp"
+bash "$tmp/ble-nightly/ble.sh" --install "$HOME/.local/share"
+'''
 
 [bootstrap.packages]
 "winget:Git.Git" = "latest"
@@ -37,6 +48,10 @@ bun = "latest"
 [dotfiles.powershell]
 source = "dotfiles/powershell/profile.ps1"
 variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" }]
+
+[dotfiles.bash]
+source = "dotfiles/bash/.bashrc"
+variants = [{ os = "linux", target = "~/.bashrc" }]
 
 [dotfiles.zed]
 source = "dotfiles/zed"
