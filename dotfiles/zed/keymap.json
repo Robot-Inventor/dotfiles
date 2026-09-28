@@ -27,5 +27,11 @@
                 ["editor::MoveToEndOfLine", ["editor::HandleInput", ";"], "editor::Newline"]
             ]
         }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "ctrl-enter": ["terminal::SendText", "\u001b[13;5u"]
+        }
     }
 ]

@@ -3,3 +3,9 @@ bleopt highlight_filename=
 bleopt highlight_variable=
 
 ble-face auto_complete='fg=244'
+
+# Shift+Enter (Zed sends LF/C-j): insert a newline
+ble-bind -m emacs -f 'C-j' newline
+
+# Ctrl+Enter: execute the entire command buffer
+ble-bind -m emacs -f 'C-RET' accept-line
