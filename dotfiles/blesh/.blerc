@@ -9,3 +9,10 @@ ble-bind -m emacs -f 'C-j' newline
 
 # Ctrl+Enter: execute the entire command buffer
 ble-bind -m emacs -f 'C-RET' accept-line
+
+function ble/widget/select-all {
+  ble/widget/@nomarked beginning-of-text
+  ble/widget/@marked end-of-text
+}
+
+ble-bind -m emacs -f 'C-a' select-all
