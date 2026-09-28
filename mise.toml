@@ -6,7 +6,7 @@ run = [
   "mise upgrade",
   "mise bootstrap packages upgrade",
   "mise run update-blesh",
-  "skills update --global --yes",
+  "mise run sync-skills",
   "mise dot apply",
 ]
 dir = "~/dotfiles"
@@ -21,6 +21,11 @@ curl -fsSL https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-ni
 bash "$tmp/ble-nightly/ble.sh" --install "$HOME/.local/share"
 '''
 run_windows = "exit /b 0"
+
+[tasks.sync-skills]
+description = "Sync global agent skills"
+run = "bun scripts/sync-skills.ts"
+dir = "~/dotfiles"
 
 [bootstrap.packages]
 "winget:Git.Git" = "latest"
