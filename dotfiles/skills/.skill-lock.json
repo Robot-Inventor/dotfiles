@@ -126,6 +126,15 @@
       "skillFolderHash": "dc6d9660c4297496a9220de377f6f7df38ab1a53",
       "installedAt": "2026-08-10T20:47:27.570Z",
       "updatedAt": "2026-08-10T20:47:27.570Z"
+    },
+    "ArkType": {
+      "source": "Robot-Inventor/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
+      "skillPath": "skills/arktype/SKILL.md",
+      "skillFolderHash": "5fece954c8ab13f5b6b2ba4c51e1182280ae701f",
+      "installedAt": "2026-09-28T14:09:25.668Z",
+      "updatedAt": "2026-09-28T14:09:25.668Z"
     }
   },
   "dismissed": {
