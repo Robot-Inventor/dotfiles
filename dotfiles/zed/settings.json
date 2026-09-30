@@ -128,6 +128,9 @@
         "metrics": false
     },
     "agent": {
+        "threads_sidebar": {
+            "default_width": 250
+        },
         "single_file_review": true,
         "enable_feedback": false,
         "default_model": {
@@ -149,7 +152,6 @@
         },
         "model_parameters": [],
         "default_width": 250,
-        "threads_sidebar_default_width": 250,
         "flexible": false,
         "expand_terminal_card": false
     },
