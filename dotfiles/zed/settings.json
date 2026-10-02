@@ -78,8 +78,9 @@
     "agent_servers": {
         "OpenCode v2": {
             "default_config_options": {
-                "effort": "max",
-                "model": "openai/gpt-6-luna"
+                "mode": "build",
+                "effort": "high",
+                "model": "openai/gpt-6.1-sol"
             },
             "type": "custom",
             "command": "opencode",
@@ -91,7 +92,7 @@
         "codex-acp": {
             "default_config_options": {
                 "fast-mode": false,
-                "model": "gpt-5.6-luna",
+                "model": "gpt-6.1-sol",
                 "reasoning_effort": "high",
                 "mode": "agent-full-access"
             },
