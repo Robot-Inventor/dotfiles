@@ -3,6 +3,7 @@
 [tasks.sync]
 description = "Upgrade tools and apply dotfiles"
 run = [
+  "mise self-update -y",
   "mise upgrade",
   "mise bootstrap packages upgrade",
   "mise run update-blesh",
