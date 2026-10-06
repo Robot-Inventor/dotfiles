@@ -48,7 +48,9 @@ bun = "latest"
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
 "~/.gitconfig/settings" = { source = "dotfiles/git/.gitconfig", template = "tera" }
 "~/.config/git/attributes" = "dotfiles/git/.gitattributes"
+"~/.config/opencode/AGENTS.md" = "dotfiles/codex/AGENTS.md"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
+"~/.codex/AGENTS.md" = "dotfiles/codex/AGENTS.md"
 "~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera" }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
 
