@@ -94,7 +94,7 @@
                 "fast-mode": false,
                 "model": "gpt-6.1-sol",
                 "reasoning_effort": "high",
-                "mode": "agent-full-access"
+                "mode": "agent"
             },
             "type": "registry",
             "default_mode": "default"
