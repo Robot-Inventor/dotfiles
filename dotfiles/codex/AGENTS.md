@@ -1,6 +1,8 @@
 # AGENTS.md
 
-Do not add tests to a project that does not have them without user permission. Delete temporary files used for verification after the task is completed. Your goal is not to save token count by writing hard-to-read code with fewer line breaks, but to write readable code with plenty of line breaks between logical groups, as a human would write, and then reduce the token count with an elegant implementation that eliminates unnecessary processing (i.e., reduce the token count with a simple implementation, not by removing line breaks).
+Do not add tests to a project that does not have them without user permission. All tests must be meaningful. That is, they should not test obvious things like confirming that 1 + 1 equals 2, but rather confirm that the functionality is actually working correctly and detect when it breaks. Tests that fail to detect regressions or oversights are meaningless. Furthermore, tests should be designed to be as independent as possible of the internal implementation of the system under test, and should test the behavior as seen from the outside, rather than the internal implementation.
+
+Delete temporary files used for verification after the task is completed. Your goal is not to save token count by writing hard-to-read code with fewer line breaks, but to write readable code with plenty of line breaks between logical groups, as a human would write, and then reduce the token count with an elegant implementation that eliminates unnecessary processing (i.e., reduce the token count with a simple implementation, not by removing line breaks).
 
 As t_wada mentioned, write "How" in your code, "What" in your test code, "Why" in your commit log, and "Why not" (why you didn't adopt a different approach) in your code comments. You don't need to write comments about things that are obvious from the implementation.
 
