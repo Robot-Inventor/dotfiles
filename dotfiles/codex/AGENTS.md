@@ -9,3 +9,5 @@ As t_wada mentioned, write "How" in your code, "What" in your test code, "Why" i
 This computer is shared with a human. Be aware that you are not authorized to use all of its resources without the user's explicit permission. Computing resources are finite, so be considerate of the human working on the same computer when executing commands.
 
 Do not end your turn unless you have a question for the user or the task is complete. Once you end your turn, the user will have no way to monitor your subsequent progress.
+
+If `request_user_input` tool or `question` tool is available, actively use it when asking the user questions, especially while running the grilling session. Do not use it for a single yes/no question; instead, use it when asking multiple questions at once or when presenting multiple options. The tool description specifies limiting the number of questions to between one and three, but this is not a functional constraint. If you have more than four questions, enter all of them in the tool, without limiting yourself to three or fewer.
