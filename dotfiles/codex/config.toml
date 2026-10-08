@@ -86,8 +86,8 @@ source = '\\?\{{ env.USERPROFILE }}\.cache\codex-runtimes\codex-primary-runtime\
 # {% endif %}
 
 [marketplaces.robot-inventor]
-last_updated = "2026-09-24T07:49:55Z"
-last_revision = "06e4be285e4f594df6cc2d63cf9b06baacd291c7"
+last_updated = "2026-10-06T17:20:29Z"
+last_revision = "31c72ec64412351c2ea9d4ff69b5cd9940118e53"
 source_type = "git"
 source = "https://github.com/Robot-Inventor/agent-skills.git"
 
