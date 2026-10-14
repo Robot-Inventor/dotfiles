@@ -1,6 +1,6 @@
 #:schema https://mise.jdx.dev/schema/mise.json
 
-[tasks.sync]
+[tasks.bootstrap]
 description = "Upgrade tools and apply dotfiles"
 run = [
   "mise self-update -y",
@@ -8,7 +8,6 @@ run = [
   "mise bootstrap packages upgrade",
   "mise run update-blesh",
   "mise run sync-skills",
-  "mise dot apply",
 ]
 dir = "~/dotfiles"
 

@@ -8,5 +8,5 @@ git clone https://github.com/Robot-Inventor/dotfiles.git
 
 # Install all tools and sync dotfiles
 cd dotfiles
-mise run sync
+mise bootstrap
 ```
