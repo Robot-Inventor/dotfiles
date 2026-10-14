@@ -35,6 +35,7 @@ dir = "~/dotfiles"
 "winget:AlDanial.Cloc" = "latest"
 "winget:7zip.7zip" = "latest"
 "winget:Microsoft.PowerToys" = "latest"
+"winget:Microsoft.WindowsTerminal" = "latest"
 
 [settings]
 tool_update.global_auto = true
@@ -61,6 +62,12 @@ codex = "latest"
 [dotfiles.powershell]
 source = "dotfiles/powershell/profile.ps1"
 variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" }]
+
+[dotfiles.windowsTerminal]
+source = "dotfiles/windows-terminal/settings.json"
+variants = [
+  { os = "windows", target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" },
+]
 
 [dotfiles.bash]
 source = "dotfiles/bash/.bashrc"
