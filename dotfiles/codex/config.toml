@@ -3,9 +3,9 @@ show_raw_agent_reasoning = true
 model_reasoning_summary = "detailed"
 model_reasoning_effort = "high"
 web_search = "cached"
-approvals_reviewer = "user"
-approval_policy = "never"
-sandbox_mode = "danger-full-access"
+approvals_reviewer = "auto_review"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
 
 [features]
 default_mode_request_user_input = true
