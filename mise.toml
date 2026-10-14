@@ -5,6 +5,7 @@ description = "Upgrade tools and apply dotfiles"
 run = [
   "mise self-update -y",
   "mise upgrade",
+  "mise bootstrap packages apply",
   "mise bootstrap packages upgrade",
   "mise run update-blesh",
   "mise run sync-skills",
@@ -32,6 +33,8 @@ dir = "~/dotfiles"
 "apt:git" = "latest"
 "winget:Microsoft.PowerShell" = "latest"
 "winget:AlDanial.Cloc" = "latest"
+"winget:7zip.7zip" = "latest"
+"winget:Microsoft.PowerToys" = "latest"
 
 [settings]
 tool_update.global_auto = true
@@ -44,7 +47,6 @@ ni = "latest"
 opencode = "latest"
 codex = "latest"
 "npm:skills" = "latest"
-7z = "latest"
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
