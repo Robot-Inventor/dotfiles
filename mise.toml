@@ -44,6 +44,7 @@ ni = "latest"
 opencode = "latest"
 codex = "latest"
 "npm:skills" = "latest"
+7z = "latest"
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
