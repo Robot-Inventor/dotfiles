@@ -33,14 +33,16 @@ dir = "~/dotfiles"
 "winget:Microsoft.PowerShell" = "latest"
 "winget:AlDanial.Cloc" = "latest"
 
+[settings]
+tool_update.global_auto = true
+
 [tools]
 node = "latest"
 bun = "latest"
-# GitHub CLI
-"aqua:cli/cli" = "latest"
-"npm:@antfu/ni" = "latest"
-"npm:@opencode/cli" = { version = "latest", allow_builds = ["@opencode/cli"] }
-"npm:@openai/codex" = "latest"
+gh = "latest"
+ni = "latest"
+opencode = "latest"
+codex = "latest"
 "npm:skills" = "latest"
 
 [dotfiles]
