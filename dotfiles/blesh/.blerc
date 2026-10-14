@@ -1,6 +1,6 @@
-bleopt highlight_syntax=
+# Measures to address command input lag
 bleopt highlight_filename=
-bleopt highlight_variable=
+bleopt complete_auto_delay=200
 
 ble-face auto_complete='fg=244'
 
