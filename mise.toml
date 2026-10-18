@@ -48,6 +48,7 @@ ni = "latest"
 opencode = "latest"
 codex = "latest"
 "npm:skills" = "latest"
+"npm:@bitkyc08/opencodex" = "latest"
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"

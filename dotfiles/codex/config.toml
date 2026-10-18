@@ -6,10 +6,16 @@ web_search = "cached"
 approvals_reviewer = "auto_review"
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"
+model_catalog_json = '{{ (env.USERPROFILE if os() == "windows" else env.HOME) | replace(from="\\", to="/") }}/.codex/opencodex-catalog.json'
+# Auto-injected by opencodex (undo: ocx restore)
+openai_base_url = "http://127.0.0.1:10100/v1"
+# Auto-injected by opencodex (undo: ocx restore)
+experimental_realtime_ws_base_url = "http://127.0.0.1:10100/v1"
 
 [features]
 default_mode_request_user_input = true
 
+hooks = true
 [notice]
 hide_full_access_warning = false
 
@@ -32,6 +38,7 @@ screen_reader_detection_done = true
 "gpt-5.5" = 4
 "gpt-5.6-sol" = 1
 gpt-6-astra = 4
+"gpt-6.1-sol" = 3
 # {% endif %}
 
 [plugins."github@openai-curated"]
@@ -160,3 +167,20 @@ trusted_hash = "sha256:6498af4a8003e011c5b7802b36d7fdacafe4d0bfe7b80704e02e066bc
 
 [hooks.state."agent-skills@robot-inventor:hooks/hooks.json:user_prompt_submit:0:0"]
 trusted_hash = "sha256:4fb2cd5c3a0a8adf1411776b0008d86fddd9086e12d156e5cde7661e453bb10d"
+
+# {% if os() == "windows" %}
+[hooks.state.'{{ env.USERPROFILE }}\.codex\hooks.json:pre_tool_use:0:0']
+trusted_hash = "sha256:50944fd603371ea48f5f140f460c741a29083db8d8c785e0ba084d5d2e87e485"
+
+[hooks.state.'{{ env.USERPROFILE }}\.codex\hooks.json:permission_request:0:0']
+trusted_hash = "sha256:9c022d4939a0cc6b04745147218a21acf144f21e825a6e93c1d312f1e834376c"
+
+[hooks.state.'{{ env.USERPROFILE }}\.codex\hooks.json:session_start:0:0']
+trusted_hash = "sha256:a01871b6a62413c29c0edbaa2dd666454daef057d2d08203e08f8b6b215a23ca"
+
+[hooks.state.'{{ env.USERPROFILE }}\.codex\hooks.json:user_prompt_submit:0:0']
+trusted_hash = "sha256:82f0bd4ae25e973be1197dacbdd4cc1a5815018351b92c150d7bcb60febb97ad"
+
+[hooks.state.'{{ env.USERPROFILE }}\.codex\hooks.json:stop:0:0']
+trusted_hash = "sha256:73d9cd2d7f7a7fdd253b0538686e4b0ca2dc352562757393786f04d7b3231fe1"
+# {% endif %}
