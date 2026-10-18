@@ -1,0 +1,48 @@
+foreground = "#cdd6f4"
+background = "#1e1e2e"
+palette-0 = "#45475a"
+palette-1 = "#f38ba8"
+palette-2 = "#a6e3a1"
+palette-3 = "#f9e2af"
+palette-4 = "#89b4fa"
+palette-5 = "#f5c2e7"
+palette-6 = "#94e2d5"
+palette-7 = "#bac2de"
+palette-8 = "#585b70"
+palette-9 = "#f38ba8"
+palette-10 = "#a6e3a1"
+palette-11 = "#f9e2af"
+palette-12 = "#89b4fa"
+palette-13 = "#f5c2e7"
+palette-14 = "#94e2d5"
+palette-15 = "#a6adc8"
+
+# selection-foreground = "#2e3440" (reset to default)
+# selection-background = "#264f78" (reset to default)
+# cursor-text = "#2e3440" (reset to default)
+# cursor-color = "#60cdff" (reset to default)
+
+theme = "April"
+theme-dark = "Catppuccin Mocha"
+font-family = "Moralerspace Neon HW"
+# font-blending = "linear" (reset to default)
+
+privilege-notification-on-finish = true
+privilege-caffeinate-agent-processing = true
+
+autocomplete-shortcut = "right-arrow"
+autocomplete-skip-secrets = true
+
+# {% if os() == "windows" %}
+# {% set zed_path = env.LOCALAPPDATA | replace(from="\\", to="/") ~ "/Programs/Zed/Zed.exe" %}
+# {% else %}
+# {% set zed_path = "dev.zed.Zed" %}
+# {% endif %}
+open-with-app = "Zed|{{ zed_path }}"
+default-git-client = "{{ zed_path }}"
+
+# {% if os() == "windows" %}
+windows-text-rendering = "cleartype"
+autocomplete-inline-provider = "psreadline"
+keybind = "ctrl+v=paste"
+# {% endif %}
