@@ -80,4 +80,7 @@ variants = [{ os = "linux", target = "~/.blerc" }]
 
 [dotfiles.zed]
 source = "dotfiles/zed"
-variants = [{ os = "windows", target = "~/AppData/Roaming/Zed" }]
+variants = [
+  { os = "windows", target = "~/AppData/Roaming/Zed" },
+  { os = "macos", target = "~/.config/zed" },
+]
