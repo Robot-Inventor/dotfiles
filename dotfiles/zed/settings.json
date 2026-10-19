@@ -163,7 +163,7 @@
         "show": "auto"
     },
     "buffer_font_fallbacks": ["Noto Sans JP"],
-    "buffer_font_family": "Moralerspace Neon",
+    "buffer_font_family": "Moralerspace Neon HW",
     "file_types": {
         "markdown": ["*.mdx"],
         "Processing": ["*.pde"],
