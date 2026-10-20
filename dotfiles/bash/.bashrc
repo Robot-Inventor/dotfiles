@@ -133,4 +133,8 @@ if command -v ssh-agent >/dev/null 2>&1 && command -v ssh-add >/dev/null 2>&1; t
 fi
 
 eval "$("$HOME/.local/bin/mise" activate bash)"
+
+# Addressing unnatural colors when opening OpenCode in Otty
+export COLORTERM=truecolor
+
 [[ ${BLE_VERSION-} ]] && ble-attach
