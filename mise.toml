@@ -9,6 +9,7 @@ run = [
   "mise bootstrap packages upgrade",
   "mise run update-blesh",
   "mise run sync-skills",
+  "mise run sync-codex-catalog",
 ]
 dir = "~/dotfiles"
 
@@ -26,6 +27,12 @@ run_windows = "exit /b 0"
 [tasks.sync-skills]
 description = "Sync global agent skills"
 run = "bun scripts/sync-skills.ts"
+dir = "~/dotfiles"
+
+[tasks.sync-codex-catalog]
+description = "Copy the Windows Codex model catalog into WSL"
+run = "bash scripts/sync-codex-catalog.sh"
+run_windows = "exit /b 0"
 dir = "~/dotfiles"
 
 [bootstrap.packages]
@@ -48,7 +55,7 @@ ni = "latest"
 opencode = "latest"
 codex = "latest"
 "npm:skills" = "latest"
-"npm:@bitkyc08/opencodex" = "latest"
+"npm:@bitkyc08/opencodex" = { version = "latest", os = ["windows", "macos"] }
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
