@@ -42,7 +42,7 @@ open-with-app = "Zed|{{ zed_path }}"
 default-git-client = "{{ zed_path }}"
 
 # {% if os() == "windows" %}
-windows-text-rendering = "cleartype"
+windows-text-rendering = "natural-symmetric"
 autocomplete-inline-provider = "psreadline"
 keybind = "ctrl+v=paste"
 # {% endif %}
