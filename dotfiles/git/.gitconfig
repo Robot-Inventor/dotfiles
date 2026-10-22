@@ -1,5 +1,5 @@
 [core]
-	editor = zed --wait
+	editor = {{ "vi" if os() == "linux" else "zed --wait" }}
 	quotepath = false
 	autocrlf = false
 [user]
