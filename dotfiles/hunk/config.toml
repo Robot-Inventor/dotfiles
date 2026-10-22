@@ -1,4 +1,4 @@
-theme = "catppuccin-mocha"
+theme = "terminal"
 mode = "split"
 line_numbers = true
 wrap_lines = false
