@@ -68,7 +68,7 @@ hunk = "latest"
 "~/.config/otty/config.toml" = { source = "dotfiles/otty/config.toml", mode = "template" }
 "~/.config/hunk/config.toml" = "dotfiles/hunk/config.toml"
 "~/.codex/AGENTS.md" = "dotfiles/codex/AGENTS.md"
-"~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera" }
+"~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera", merge = true }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
 
 [dotfiles.powershell]
