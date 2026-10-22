@@ -54,6 +54,7 @@ gh = "latest"
 ni = "latest"
 opencode = "latest"
 codex = "latest"
+hunk = "latest"
 "npm:skills" = "latest"
 "npm:@bitkyc08/opencodex" = { version = "latest", os = ["windows", "macos"] }
 
@@ -65,6 +66,7 @@ codex = "latest"
 "~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
 "~/.config/opencode/cli.json" = "dotfiles/opencode/cli.json"
 "~/.config/otty/config.toml" = { source = "dotfiles/otty/config.toml", mode = "template" }
+"~/.config/hunk/config.toml" = "dotfiles/hunk/config.toml"
 "~/.codex/AGENTS.md" = "dotfiles/codex/AGENTS.md"
 "~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera" }
 "~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
