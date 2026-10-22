@@ -10,7 +10,6 @@ run = [
   "mise run update-blesh",
   "mise run sync-skills",
   "mise run sync-codex-catalog",
-  "mise run sync-node-repl",
 ]
 dir = "~/dotfiles"
 
@@ -33,12 +32,6 @@ dir = "~/dotfiles"
 [tasks.sync-codex-catalog]
 description = "Copy the Windows Codex model catalog into WSL"
 run = "bash scripts/sync-codex-catalog.sh"
-run_windows = "exit /b 0"
-dir = "~/dotfiles"
-
-[tasks.sync-node-repl]
-description = "Extract Linux node_repl and register it with Codex"
-run = "bash scripts/sync-node-repl.sh"
 run_windows = "exit /b 0"
 dir = "~/dotfiles"
 
