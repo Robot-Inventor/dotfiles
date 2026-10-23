@@ -43,7 +43,8 @@ dir = "~/dotfiles"
 "winget:7zip.7zip" = "latest"
 "winget:Microsoft.PowerToys" = "latest"
 "winget:Microsoft.WindowsTerminal" = "latest"
-"winget:raycast" = "latest"
+# Raycast
+"winget:9PFXXSHC64H3" = "latest"
 
 [settings]
 tool_update.global_auto = true
