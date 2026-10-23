@@ -23,3 +23,5 @@
 [gpg "ssh"]
 	program = C:/Windows/System32/OpenSSH/ssh-keygen.exe
 # {% endif %}
+[alias]
+	default = !git switch \"$(git symbolic-ref --short refs/remotes/origin/HEAD | sed \"s|^origin/||\")\"
