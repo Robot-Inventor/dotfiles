@@ -1,4 +1,2 @@
 [wsl2]
-networkingMode=mirrored
-# PostgreSQL
-ignoredPorts=5432
+networkingMode=nat
