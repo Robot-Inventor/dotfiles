@@ -8,6 +8,12 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
     "format_on_save": "on",
+    "formatter": {
+        "external": {
+            "command": "bun",
+            "arguments": ["fmt", "--no-script", "--stdin-filepath", "{buffer_path}"]
+        }
+    },
     "code_lens": "on",
     "cli_default_open_behavior": "existing_window",
     "outline_panel": {
