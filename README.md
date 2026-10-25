@@ -21,3 +21,11 @@ Before applying these settings to an existing installation:
    preserving their order. Keep `~/.config/otty/profiles/` in place; neither it nor
    `config.local.toml` is managed by this repository.
 3. Apply the Otty settings with `mise dot apply ~/.config/otty/config.toml`.
+
+## Zen + Sine mods
+
+- `mise run sync-zen` wires `dotfiles/zen/mods.json` and `dotfiles/zen/user.js`
+  as symlinks into the profile and installs any missing mod folder from its
+  GitHub repository.
+- `mise run sync-zen export` rewrites `dotfiles/zen/user.js` from the current
+  `prefs.js`. Run it manually after changing mod settings.
