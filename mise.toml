@@ -10,6 +10,7 @@ run = [
   "mise run update-blesh",
   "mise run sync-skills",
   "mise run sync-codex-catalog",
+  "codex plugin marketplace upgrade"
 ]
 dir = "~/dotfiles"
 
