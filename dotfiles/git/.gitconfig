@@ -25,3 +25,4 @@
 # {% endif %}
 [alias]
 	default = !git switch \"$(git symbolic-ref --short refs/remotes/origin/HEAD | sed \"s|^origin/||\")\"
+	sweep = "!f() { default=$(git symbolic-ref --short refs/remotes/origin/HEAD) || return; default=${default#origin/}; git switch \"$default\" || return; git for-each-ref --format='%(refname:lstrip=2)' refs/heads | while IFS= read -r branch; do case \"$branch\" in \"$default\"|develop|gh-pages) ;; *) git branch -D -- \"$branch\" ;; esac; done; }; f"
