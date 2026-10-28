@@ -69,41 +69,41 @@ hunk = "latest"
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
-"~/.gitconfig/settings" = { source = "dotfiles/git/.gitconfig", template = "tera" }
-"~/.config/git/attributes" = "dotfiles/git/.gitattributes"
-"~/.config/opencode/AGENTS.md" = "dotfiles/codex/AGENTS.md"
-"~/.config/opencode/opencode.jsonc" = "dotfiles/opencode/opencode.jsonc"
-"~/.config/opencode/cli.json" = "dotfiles/opencode/cli.json"
-"~/.config/otty/config.toml" = { source = "dotfiles/otty/config.toml", mode = "template" }
-"~/.config/hunk/config.toml" = "dotfiles/hunk/config.toml"
-"~/.codex/AGENTS.md" = "dotfiles/codex/AGENTS.md"
-"~/.codex/config.toml/settings" = { source = "dotfiles/codex/config.toml", template = "tera", merge = true }
-"~/.agents/.skill-lock.json" = "dotfiles/skills/.skill-lock.json"
+"~/.gitconfig/settings" = { source = "~/dotfiles/dotfiles/git/.gitconfig", template = "tera" }
+"~/.config/git/attributes" = "~/dotfiles/dotfiles/git/.gitattributes"
+"~/.config/opencode/AGENTS.md" = "~/dotfiles/dotfiles/codex/AGENTS.md"
+"~/.config/opencode/opencode.jsonc" = "~/dotfiles/dotfiles/opencode/opencode.jsonc"
+"~/.config/opencode/cli.json" = "~/dotfiles/dotfiles/opencode/cli.json"
+"~/.config/otty/config.toml" = { source = "~/dotfiles/dotfiles/otty/config.toml", mode = "template" }
+"~/.config/hunk/config.toml" = "~/dotfiles/dotfiles/hunk/config.toml"
+"~/.codex/AGENTS.md" = "~/dotfiles/dotfiles/codex/AGENTS.md"
+"~/.codex/config.toml/settings" = { source = "~/dotfiles/dotfiles/codex/config.toml", template = "tera", merge = true }
+"~/.agents/.skill-lock.json" = "~/dotfiles/dotfiles/skills/.skill-lock.json"
 
 [dotfiles.powershell]
-source = "dotfiles/powershell/profile.ps1"
+source = "~/dotfiles/dotfiles/powershell/profile.ps1"
 variants = [{ os = "windows", target = "~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1" }]
 
 [dotfiles.windowsTerminal]
-source = "dotfiles/windows-terminal/settings.json"
+source = "~/dotfiles/dotfiles/windows-terminal/settings.json"
 variants = [
   { os = "windows", target = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" },
 ]
 
 [dotfiles.wsl]
-source = "dotfiles/wsl/.wslconfig"
+source = "~/dotfiles/dotfiles/wsl/.wslconfig"
 variants = [{ os = "windows", target = "~/.wslconfig" }]
 
 [dotfiles.bash]
-source = "dotfiles/bash/.bashrc"
+source = "~/dotfiles/dotfiles/bash/.bashrc"
 variants = [{ os = "linux", target = "~/.bashrc" }]
 
 [dotfiles.blesh]
-source = "dotfiles/blesh/.blerc"
+source = "~/dotfiles/dotfiles/blesh/.blerc"
 variants = [{ os = "linux", target = "~/.blerc" }]
 
 [dotfiles.zed]
-source = "dotfiles/zed"
+source = "~/dotfiles/dotfiles/zed"
 variants = [
   { os = "windows", target = "~/AppData/Roaming/Zed" },
   { os = "macos", target = "~/.config/zed" },
