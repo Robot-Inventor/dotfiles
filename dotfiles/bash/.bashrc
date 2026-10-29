@@ -137,4 +137,6 @@ eval "$("$HOME/.local/bin/mise" activate bash)"
 # Addressing unnatural colors when opening OpenCode in Otty
 export COLORTERM=truecolor
 
+eval "$(starship init bash)"
+
 [[ ${BLE_VERSION-} ]] && ble-attach

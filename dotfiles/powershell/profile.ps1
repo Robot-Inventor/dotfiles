@@ -12,5 +12,6 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 Remove-Item Alias:ni -Force -ErrorAction Ignore
+Invoke-Expression (&starship init powershell)
 
 (&mise activate pwsh) | Out-String | Invoke-Expression

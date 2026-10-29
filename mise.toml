@@ -52,6 +52,8 @@ dir = "~/dotfiles"
 "winget:Microsoft.WindowsTerminal" = "latest"
 # Raycast
 "winget:9PFXXSHC64H3" = "latest"
+"winget:Starship.Starship" = "latest"
+"apt:starship" = "latest"
 
 [settings]
 tool_update.global_auto = true
