@@ -5,7 +5,7 @@
 [user]
 	email = 50550561+Robot-Inventor@users.noreply.github.com
 	name = Robot-Inventor
-	signingkey = {{ (env.USERPROFILE if os() == "windows" else env.HOME) | replace(from="\\", to="/") }}/.ssh/id_ed25519_git_signing.pub
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPM8KEzhw9sfCgLfxyO7KlMDxOAxJGZkQ24eHn8h3Edf
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -21,7 +21,10 @@
 	gpgsign = true
 # {% if os() == "windows" %}
 [gpg "ssh"]
-	program = C:/Windows/System32/OpenSSH/ssh-keygen.exe
+program = op-ssh-sign.exe
+# {% elif env.WSL_DISTRO_NAME is defined %}
+[gpg "ssh"]
+program = op-ssh-sign-wsl.exe
 # {% endif %}
 [alias]
 	default = !git switch \"$(git symbolic-ref --short refs/remotes/origin/HEAD | sed \"s|^origin/||\")\"
