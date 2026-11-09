@@ -1,5 +1,16 @@
 {
     "$schema": "https://opencode.ai/config.json",
     "lsp": true,
-    "plugins": ["@robot-inventor/agent-skills@1.5.2"]
+    "plugins": ["@robot-inventor/agent-skills@1.5.2"],
+    "mcp": {
+        "servers": {
+            "browse": {
+                "type": "local",
+                "command": ["browse.exe", "mcp"],
+                "environment": {
+                    "OPENCODE_BROWSER_RUNTIME": "auto-update"
+                }
+            }
+        }
+    }
 }

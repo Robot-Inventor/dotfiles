@@ -132,3 +132,8 @@ skill = "#9d7cd8"
 [desktop.open-in-target-preferences]
 global = "zed"
 # {% endif %}
+
+[mcp_servers.browse]
+# Resolved via PATH on Windows and via WSL interop in WSL, so one username-free entry works in both.
+command = "browse.exe"
+args = ["mcp"]
