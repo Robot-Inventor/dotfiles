@@ -5,7 +5,7 @@
 [user]
 	email = 50550561+Robot-Inventor@users.noreply.github.com
 	name = Robot-Inventor
-	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPM8KEzhw9sfCgLfxyO7KlMDxOAxJGZkQ24eHn8h3Edf
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMbMV0sxdZZLUiSdLz0mmtUyNl9mJjvaP1icPTx4JjkA
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
