@@ -207,6 +207,15 @@
         "tsgo": true,
         "xml": true
     },
+    "lsp": {
+        "typescript-ls": {
+            "binary": {
+                // Let mise resolve npm launchers and installed versions on each OS.
+                "path": "mise",
+                "arguments": ["exec", "--", "tsrs", "--lsp", "--stdio"]
+            }
+        }
+    },
     "languages": {
         "Git Commit": {
             "soft_wrap": "editor_width",

@@ -67,6 +67,8 @@ opencode = "latest"
 codex = "latest"
 hunk = "latest"
 "npm:skills" = "latest"
+# mise's "latest" selects the obsolete 0.0.0; this prerelease changed from staged approval to Trusted Publishing.
+"npm:tsrs" = { version = "0.23.0-ts7.1.0-beta", trust_policy_excludes = ["tsrs@0.23.0-ts7.1.0-beta"] }
 "npm:@bitkyc08/opencodex" = { version = "latest", os = ["windows", "macos"] }
 
 [dotfiles]
@@ -109,4 +111,5 @@ source = "~/dotfiles/dotfiles/zed"
 variants = [
   { os = "windows", target = "~/AppData/Roaming/Zed" },
   { os = "macos", target = "~/.config/zed" },
+  { os = "linux", target = "~/.config/zed" },
 ]
