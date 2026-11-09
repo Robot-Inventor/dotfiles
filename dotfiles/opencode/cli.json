@@ -9,5 +9,13 @@
     "attention": {
         "notifications": true,
         "sound": true
-    }
+    },
+    "plugins": [
+        {
+            "package": "opencode-visual-cache@latest",
+            "options": {
+                "enabled": true
+            }
+        }
+    ]
 }
