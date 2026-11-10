@@ -118,20 +118,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# SSH agent for Git SSH commit signing
-if command -v ssh-agent >/dev/null 2>&1 && command -v ssh-add >/dev/null 2>&1; then
-  codex_ssh_agent_socket="${XDG_RUNTIME_DIR:-$HOME/.ssh}/ssh-agent.sock"
-  export SSH_AUTH_SOCK="$codex_ssh_agent_socket"
-
-  if [ ! -S "$SSH_AUTH_SOCK" ]; then
-    eval "$(ssh-agent -a "$SSH_AUTH_SOCK" -s)" >/dev/null
-  fi
-
-  if ! ssh-add -l >/dev/null 2>&1; then
-    ssh-add "$HOME/.ssh/id_ed25519_git_signing"
-  fi
-fi
-
 eval "$("$HOME/.local/bin/mise" activate bash)"
 
 # Addressing unnatural colors when opening OpenCode in Otty
