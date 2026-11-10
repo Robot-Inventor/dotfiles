@@ -15,36 +15,36 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/cleanup-changes/SKILL.md",
-      "skillFolderHash": "3bdadc79ce32fcde662b3e928319d27b0adb7089",
+      "skillFolderHash": "805e48f9eedd643d30f931400f261dfd5dfeb8f3",
       "installedAt": "2026-06-28T16:50:21.825Z",
-      "updatedAt": "2026-06-28T16:50:21.825Z"
+      "updatedAt": "2026-11-10T21:09:54.940Z"
     },
     "review-loop": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/review-loop/SKILL.md",
-      "skillFolderHash": "4ece9ca5b7ef7c76b7f12e1258c7d356366d603b",
+      "skillFolderHash": "887aa923b3502fb07300c78e1d1665ef0352353b",
       "installedAt": "2026-06-28T16:50:21.827Z",
-      "updatedAt": "2026-09-24T19:09:49.815Z"
+      "updatedAt": "2026-11-10T21:09:55.009Z"
     },
     "grilling": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "skillFolderHash": "28aceb4c9567b985cb47f7db88cf23c9f33af8b8",
+      "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9",
       "installedAt": "2026-06-29T16:16:13.667Z",
-      "updatedAt": "2026-10-08T14:25:55.594Z"
+      "updatedAt": "2026-11-10T21:09:55.358Z"
     },
     "prove-it-diagnostics": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/prove-it-diagnostics/SKILL.md",
-      "skillFolderHash": "555a982fc3963aa4d8957f86d43700da3c37b998",
+      "skillFolderHash": "c1a3542b34b412d5bc4fb67816dbe1d5ee8dff28",
       "installedAt": "2026-07-03T14:16:10.530Z",
-      "updatedAt": "2026-08-02T19:44:56.651Z"
+      "updatedAt": "2026-11-10T21:09:55.075Z"
     },
     "identify-search-maintenance": {
       "source": "Robot-Inventor/agent-skills",
@@ -60,18 +60,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/simple-engineering/SKILL.md",
-      "skillFolderHash": "7461de89b999a895c412821ab896bbcc1f818345",
+      "skillFolderHash": "80537ce07704389deb297fe6eb46b04420cfb556",
       "installedAt": "2026-08-02T19:45:29.897Z",
-      "updatedAt": "2026-10-08T14:25:53.908Z"
+      "updatedAt": "2026-11-10T21:09:55.143Z"
     },
     "web-master": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/web-master/SKILL.md",
-      "skillFolderHash": "e5d3847e2d089a708e106826f210e212c706632d",
+      "skillFolderHash": "9403d8881ff29a24b2c667bec5464042789a373b",
       "installedAt": "2026-08-09T19:15:35.264Z",
-      "updatedAt": "2026-09-24T19:09:54.212Z"
+      "updatedAt": "2026-11-10T21:09:55.209Z"
     },
     "ponytail": {
       "source": "DietrichGebert/ponytail",
@@ -132,9 +132,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/arktype/SKILL.md",
-      "skillFolderHash": "5fece954c8ab13f5b6b2ba4c51e1182280ae701f",
+      "skillFolderHash": "6a9c29fc2235e65c92ae1b2d3f836fa50f8048a1",
       "installedAt": "2026-09-28T14:09:25.668Z",
-      "updatedAt": "2026-09-28T14:09:25.668Z"
+      "updatedAt": "2026-11-10T21:09:55.271Z"
     },
     "security-audit": {
       "source": "cloudflare/security-audit-skill",
@@ -144,6 +144,15 @@
       "skillFolderHash": "ccbc33ed119b28c3ef7b44a7e2081ab191ad63af",
       "installedAt": "2026-10-22T15:56:42.683Z",
       "updatedAt": "2026-10-22T15:56:42.683Z"
+    },
+    "modern-web-guidance": {
+      "source": "GoogleChrome/modern-web-guidance",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/GoogleChrome/modern-web-guidance.git",
+      "skillPath": "skills/modern-web-guidance/SKILL.md",
+      "skillFolderHash": "2bafd62db079eae1a4b6c34d0af4f9c3490266a2",
+      "installedAt": "2026-11-10T21:10:38.859Z",
+      "updatedAt": "2026-11-10T21:10:38.859Z"
     }
   },
   "dismissed": {
