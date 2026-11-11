@@ -10,23 +10,14 @@
       "installedAt": "2026-05-02T05:52:01.786Z",
       "updatedAt": "2026-07-19T12:58:02.375Z"
     },
-    "cleanup-changes": {
-      "source": "Robot-Inventor/agent-skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
-      "skillPath": "skills/cleanup-changes/SKILL.md",
-      "skillFolderHash": "805e48f9eedd643d30f931400f261dfd5dfeb8f3",
-      "installedAt": "2026-06-28T16:50:21.825Z",
-      "updatedAt": "2026-11-10T21:09:54.940Z"
-    },
     "review-loop": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/review-loop/SKILL.md",
-      "skillFolderHash": "887aa923b3502fb07300c78e1d1665ef0352353b",
+      "skillFolderHash": "e6b31b93a7f2d2519a8ca7be77ff08a960f47e0f",
       "installedAt": "2026-06-28T16:50:21.827Z",
-      "updatedAt": "2026-11-10T21:09:55.009Z"
+      "updatedAt": "2026-11-11T00:42:12.920Z"
     },
     "grilling": {
       "source": "mattpocock/skills",
@@ -42,36 +33,36 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/prove-it-diagnostics/SKILL.md",
-      "skillFolderHash": "c1a3542b34b412d5bc4fb67816dbe1d5ee8dff28",
+      "skillFolderHash": "707f788371b279a3fcda533f9e40086a2bba314e",
       "installedAt": "2026-07-03T14:16:10.530Z",
-      "updatedAt": "2026-11-10T21:09:55.075Z"
+      "updatedAt": "2026-11-11T00:42:13.003Z"
     },
     "identify-search-maintenance": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/identify-search-maintenance/SKILL.md",
-      "skillFolderHash": "40093ee58b25ae9493c2d91b25d531420f610d27",
+      "skillFolderHash": "28d77a39c00bba54750a1d21253048013442cb2f",
       "installedAt": "2026-07-19T13:09:01.299Z",
-      "updatedAt": "2026-07-19T13:09:01.299Z"
+      "updatedAt": "2026-11-11T00:42:13.093Z"
     },
     "simple-engineering": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/simple-engineering/SKILL.md",
-      "skillFolderHash": "80537ce07704389deb297fe6eb46b04420cfb556",
+      "skillFolderHash": "299378c42dfcd12e678441d1ea823f02cd0197e4",
       "installedAt": "2026-08-02T19:45:29.897Z",
-      "updatedAt": "2026-11-10T21:09:55.143Z"
+      "updatedAt": "2026-11-11T00:42:13.153Z"
     },
     "web-master": {
       "source": "Robot-Inventor/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/web-master/SKILL.md",
-      "skillFolderHash": "9403d8881ff29a24b2c667bec5464042789a373b",
+      "skillFolderHash": "2273d5bd7b7052ac3de7f394e79a8e3d999c0cdf",
       "installedAt": "2026-08-09T19:15:35.264Z",
-      "updatedAt": "2026-11-10T21:09:55.209Z"
+      "updatedAt": "2026-11-11T00:42:13.212Z"
     },
     "ponytail": {
       "source": "DietrichGebert/ponytail",
@@ -132,9 +123,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/Robot-Inventor/agent-skills.git",
       "skillPath": "skills/arktype/SKILL.md",
-      "skillFolderHash": "6a9c29fc2235e65c92ae1b2d3f836fa50f8048a1",
+      "skillFolderHash": "9c6cf383f1dfe302b985feb821b16ecfe3a1fc6e",
       "installedAt": "2026-09-28T14:09:25.668Z",
-      "updatedAt": "2026-11-10T21:09:55.271Z"
+      "updatedAt": "2026-11-11T00:42:13.277Z"
     },
     "security-audit": {
       "source": "cloudflare/security-audit-skill",
