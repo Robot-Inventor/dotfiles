@@ -7,24 +7,12 @@ run = [
   "mise upgrade",
   "mise bootstrap packages apply",
   "mise bootstrap packages upgrade",
-  "mise run update-blesh",
   "mise run sync-skills",
   "mise run sync-codex-catalog",
   "mise run sync-zen",
   "codex plugin marketplace upgrade"
 ]
 dir = "~/dotfiles"
-
-[tasks.update-blesh]
-description = "Install or update ble.sh"
-run = '''
-tmp="$(mktemp -d)"
-trap 'rm -rf "$tmp"' EXIT
-curl -fsSL https://github.com/akinomyoga/ble.sh/releases/download/nightly/ble-nightly.tar.xz \
-  | tar -xJ -C "$tmp"
-bash "$tmp/ble-nightly/ble.sh" --install "$HOME/.local/share"
-'''
-run_windows = "exit /b 0"
 
 [tasks.sync-skills]
 description = "Sync global agent skills"
@@ -54,6 +42,7 @@ dir = "~/dotfiles"
 "winget:9PFXXSHC64H3" = "latest"
 "winget:Starship.Starship" = "latest"
 "apt:starship" = "latest"
+"apt:fish" = "latest"
 
 [settings]
 tool_update.global_auto = true
@@ -102,9 +91,13 @@ variants = [{ os = "windows", target = "~/.wslconfig" }]
 source = "~/dotfiles/dotfiles/bash/.bashrc"
 variants = [{ os = "linux", target = "~/.bashrc" }]
 
-[dotfiles.blesh]
-source = "~/dotfiles/dotfiles/blesh/.blerc"
-variants = [{ os = "linux", target = "~/.blerc" }]
+[dotfiles.fish]
+source = "~/dotfiles/dotfiles/fish/config.fish"
+variants = [{ os = "linux", target = "~/.config/fish/config.fish" }]
+
+[dotfiles.fishKeyBindings]
+source = "~/dotfiles/dotfiles/fish/functions/fish_user_key_bindings.fish"
+variants = [{ os = "linux", target = "~/.config/fish/functions/fish_user_key_bindings.fish" }]
 
 [dotfiles.zed]
 source = "~/dotfiles/dotfiles/zed"

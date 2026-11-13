@@ -2,8 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-[[ $- == *i* ]] && source -- ~/.local/share/blesh/ble.sh --attach=none
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -124,5 +122,3 @@ eval "$("$HOME/.local/bin/mise" activate bash)"
 export COLORTERM=truecolor
 
 eval "$(starship init bash)"
-
-[[ ${BLE_VERSION-} ]] && ble-attach

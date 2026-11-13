@@ -11,6 +11,18 @@ cd dotfiles
 mise bootstrap
 ```
 
+## WSL shell
+
+After bootstrapping, set fish as your login shell explicitly:
+
+```bash
+# Confirm that the installed shell is registered, then change the login shell
+grep -Fx /usr/bin/fish /etc/shells
+chsh -s /usr/bin/fish
+```
+
+Open a new WSL terminal to use fish. To switch back, run `chsh -s /bin/bash`.
+
 ## Otty
 
 Before applying these settings to an existing installation:
