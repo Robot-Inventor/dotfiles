@@ -59,6 +59,7 @@ hunk = "latest"
 # mise's "latest" selects the obsolete 0.0.0; this prerelease changed from staged approval to Trusted Publishing.
 "npm:tsrs" = { version = "0.23.0-ts7.1.0-beta", trust_policy_excludes = ["tsrs@0.23.0-ts7.1.0-beta"] }
 "npm:@bitkyc08/opencodex" = { version = "latest", os = ["windows", "macos"] }
+"npm:@opencode/browse" = { version = "latest", os = ["windows"] }
 
 [dotfiles]
 "~/.config/mise/config.toml" = "~/dotfiles/mise.toml"
@@ -67,6 +68,7 @@ hunk = "latest"
 "~/.config/opencode/AGENTS.md" = "~/dotfiles/dotfiles/codex/AGENTS.md"
 "~/.config/opencode/opencode.jsonc" = "~/dotfiles/dotfiles/opencode/opencode.jsonc"
 "~/.config/opencode/cli.json" = "~/dotfiles/dotfiles/opencode/cli.json"
+"~/.local/state/browse/auto-update.json" = "~/dotfiles/dotfiles/opencode/auto-update.json"
 "~/.config/otty/config.toml" = { source = "~/dotfiles/dotfiles/otty/config.toml", mode = "template" }
 "~/.config/hunk/config.toml" = "~/dotfiles/dotfiles/hunk/config.toml"
 "~/.codex/AGENTS.md" = "~/dotfiles/dotfiles/codex/AGENTS.md"
