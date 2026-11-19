@@ -7,9 +7,11 @@ run = [
   "mise upgrade",
   "mise bootstrap packages apply",
   "mise bootstrap packages upgrade",
+  "bun install --frozen-lockfile",
   "mise run sync-skills",
   "mise run sync-codex-catalog",
   "mise run sync-zen",
+  "mise run sync-mozkey",
   "codex plugin marketplace upgrade"
 ]
 dir = "~/dotfiles"
@@ -28,6 +30,21 @@ dir = "~/dotfiles"
 [tasks.sync-zen]
 description = "Sync Sine mods and settings with the default Zen profile"
 run = "bun scripts/sync-zen.ts"
+dir = "~/dotfiles"
+
+[tasks.sync-mozkey]
+description = "Apply MozKey settings from dotfiles/mozkey/config.json"
+run = "bun scripts/sync-mozkey.ts"
+dir = "~/dotfiles"
+
+[tasks.mozkey-export]
+description = "Export the live MozKey settings into dotfiles/mozkey/config.json"
+run = "bun scripts/sync-mozkey.ts export"
+dir = "~/dotfiles"
+
+[tasks.mozkey-update-proto]
+description = "Refresh the vendored MozKey config.proto"
+run = "bun scripts/sync-mozkey.ts update-proto"
 dir = "~/dotfiles"
 
 [bootstrap.packages]

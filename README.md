@@ -41,3 +41,18 @@ Before applying these settings to an existing installation:
   GitHub repository.
 - `mise run sync-zen export` rewrites `dotfiles/zen/user.js` from the current
   `prefs.js`. Run it manually after changing mod settings.
+
+## MozKey
+
+MozKey settings live in `dotfiles/mozkey/config.json`.
+
+- `mise run sync-mozkey` writes `config.json` into
+  `%USERPROFILE%\AppData\LocalLow\Mozc\config1.db`.
+- `mise run mozkey-export` regenerates `config.json` from the live file. Run it
+  after changing settings in the MozKey dialog, review the diff, and commit it.
+- `mise run mozkey-update-proto` refreshes the vendored `config.proto` from the
+  latest MozKey release. Pass a tag to pin it, for example
+  `mise run mozkey-update-proto v1.1.0`.
+
+After updating MozKey, run `mise run mozkey-update-proto` and then
+`mise run mozkey-export` before the next apply so settings added by the update are captured.

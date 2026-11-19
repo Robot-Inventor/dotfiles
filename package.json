@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "protobufjs": "^8.8.1"
+    }
+}
