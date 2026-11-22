@@ -98,8 +98,8 @@
         "codex-acp": {
             "default_config_options": {
                 "fast-mode": false,
-                "model": "gpt-6.1-sol",
-                "reasoning_effort": "high",
+                "model": "gpt-6.2-sol",
+                "reasoning_effort": "low",
                 "mode": "agent"
             },
             "type": "registry",
