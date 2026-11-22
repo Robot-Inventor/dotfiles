@@ -85,8 +85,8 @@
         "OpenCode v2": {
             "default_config_options": {
                 "mode": "build",
-                "effort": "high",
-                "model": "openai/gpt-6.1-sol"
+                "effort": "low",
+                "model": "opencode-go/deepseek-v4.1-flash"
             },
             "type": "custom",
             "command": "opencode",
