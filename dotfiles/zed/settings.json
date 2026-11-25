@@ -24,6 +24,9 @@
         "dock": "right"
     },
     "language_models": {
+        "opencode": {
+            "show_zen_models": false
+        },
         "openai_compatible": {
             "Z.ai": {
                 "api_url": "https://api.z.ai/api/coding/paas/v4",
@@ -135,6 +138,11 @@
         "metrics": false
     },
     "agent": {
+        "commit_message_model": {
+            "provider": "x_ai_subscribed",
+            "model": "grok-4.7",
+            "enable_thinking": false
+        },
         "threads_sidebar": {
             "default_width": 250
         },
