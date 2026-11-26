@@ -23,15 +23,6 @@ chsh -s /usr/bin/fish
 
 Open a new WSL terminal to use fish. To switch back, run `chsh -s /bin/bash`.
 
-## Environment variables
-
-`mise run sync-env` writes `DO_NOT_TRACK=1` into the OS itself: the user registry plus
-`WSLENV` on Windows, `/etc/environment` on Linux (sudo is required), and a `launchctl`
-LaunchAgent on macOS. WSL terminals take the value from the Windows side through
-`WSLENV`, so the Windows bootstrap has to run too. Programs that are already running keep
-their old environment: restart the terminal application itself, and on Linux start a new
-login session.
-
 ## Otty
 
 Before applying these settings to an existing installation:
