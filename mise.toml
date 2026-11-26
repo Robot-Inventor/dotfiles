@@ -12,6 +12,7 @@ run = [
   "mise run sync-codex-catalog",
   "mise run sync-zen",
   "mise run sync-mozkey",
+  "mise run sync-env",
   "codex plugin marketplace upgrade"
 ]
 dir = "~/dotfiles"
@@ -47,6 +48,11 @@ description = "Refresh the vendored MozKey config.proto"
 run = "bun scripts/sync-mozkey.ts update-proto"
 dir = "~/dotfiles"
 
+[tasks.sync-env]
+description = "Set DO_NOT_TRACK as a persistent environment variable for the OS"
+run = "bun scripts/sync-env.ts"
+dir = "~/dotfiles"
+
 [bootstrap.packages]
 "winget:Git.Git" = "latest"
 "apt:git" = "latest"
@@ -63,6 +69,11 @@ dir = "~/dotfiles"
 
 [settings]
 tool_update.global_auto = true
+
+[env]
+# Cover tools started through mise right away; `mise run sync-env` also writes
+# the variable into the OS so programs that never activate mise see it.
+DO_NOT_TRACK = "1"
 
 [tools]
 node = "latest"
