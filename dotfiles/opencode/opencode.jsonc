@@ -12,5 +12,17 @@
                 }
             }
         }
-    }
+    },
+    "policies": [
+        {
+            "action": "mcp.use",
+            "resource": "opencode_console",
+            "effect": "deny"
+        },
+        {
+            "action": "provider.use",
+            "resource": "opencode",
+            "effect": "deny"
+        }
+    ]
 }
